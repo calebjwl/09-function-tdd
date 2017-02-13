@@ -1,18 +1,14 @@
-export default function (value) {
-  let convertedValue = parseInt(value);
+export default function (cardValue) {
+  const convertedValue = parseInt(cardValue);
   if (convertedValue) {
     return convertedValue;
   }
-  switch (value) {
+  switch (cardValue) {
     case 'jack':
     case 'queen':
     case 'king':
       return 10;
-      break;
+    case 'ace':
+      return 11;
   }
-}
-
-
-var a = function(parameter) {
-
 }
