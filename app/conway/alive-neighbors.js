@@ -5,5 +5,6 @@ export default function (array) {
       truthCounter += 1;
     }
   }
+
   return truthCounter;
 }
